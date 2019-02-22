@@ -17,16 +17,25 @@ for i in range(20):
 print('原始序列：',list0)
 # print(len(list0))
 
-for i in range(0,len(list0),2):
-    for j in range(i+2,len(list0),2):
-        if i < len(list0)-2:           #防止下标越界
+# for i in range(0,len(list0),2):
+#     for j in range(i+2,len(list0),2):
+#         if i < len(list0)-2:           #防止下标越界
+#
+#             if list0[i]<list0[j]:       #对所有偶数元素降序排序
+#                 temp = list0[i]
+#                 list0[i] = list0[j]
+#                 list0[j] = temp
+#
+# print("对偶数元素排序后的序列：",list0)
 
-            if list0[i]<list0[j]:       #对所有偶数元素降序排序
-                temp = list0[i]
-                list0[i] = list0[j]
-                list0[j] = temp
 
+#------------------------------------
+            #  方法二
+
+list0[::2] = sorted(list0[::2],reverse=True)
 print("对偶数元素排序后的序列：",list0)
+
+
 
 
 
