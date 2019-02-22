@@ -8,16 +8,26 @@
 '''
 
 
-pho_str = input("请输入手机号：")
-b = 0
-list1 = [131,132,135,136,138,139]  #号段
-try:
-    pho_num = int(pho_str)
-except ValueError:
-    b += 1
-    print("请输入数字形式的手机号！")    #判断是否为数字
+# pho_str = input("请输入手机号：")
+# b = 0
+# list1 = [131,132,135,136,138,139]  #号段
+# try:
+#     pho_num = int(pho_str)
+# except ValueError:
+#     b += 1
+#     print("请输入数字形式的手机号！")    #判断是否为数字
+#
+# if b==0:
+#     if int(pho_str[:3]) in list1 and len(pho_str)==11:   #判断手机号是否正确
+#         print("手机号输入正确")
 
-if b==0:
-    if int(pho_str[:3]) in list1 and len(pho_str)==11:   #判断手机号是否正确
-        print("手机号输入正确")
+
+
+alist=[1,3,5,7,9,]
+print(alist.reverse())
+
+
+
+
+
 
